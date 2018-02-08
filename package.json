@@ -1,0 +1,23 @@
+{
+  "name": "api-wallet",
+  "version": "1.0.0",
+  "description": "wallet functionalities using coinbase api",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sumitpatel93/api-wallet.git"
+  },
+  "keywords": [
+    "coinbase",
+    "blockchain"
+  ],
+  "author": "sumit,neha",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sumitpatel93/api-wallet/issues"
+  },
+  "homepage": "https://github.com/sumitpatel93/api-wallet#readme"
+}
