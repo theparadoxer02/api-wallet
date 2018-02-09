@@ -1,5 +1,47 @@
-extends layout
-
-block content
-  h1= title
-  p Welcome to #{title}
+doctype html
+html(lang='en')
+  head
+    // Required meta tags
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+    // Bootstrap CSS
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css', integrity='sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm', crossorigin='anonymous')
+    title Wallet
+    style.
+      span{
+      padding:10px;
+      background-color: #d9dde2;
+      text-align: center;
+      }
+      button{
+      height: 30px;
+      margin: 10px;
+      padding: 10px;
+      text-align: center;
+      }
+      .panel-body{
+      border:1px solid grey;
+      margin-top: 10px;
+      }
+      .tabs{
+      text-align: center;
+      }
+  body
+    .header(style='text-align: center;')
+      h1 Wallet
+      p Open source bitcoin and alt-coin wallet
+    .col-md-12(style='background-color:#f4f7fc ; height:60px;')
+      .col-md-12.tabs
+        span Multicoins
+        span Trade
+        span Tools
+        span Security
+        span Contact Us
+        span Help Us
+    .col-md-12.panel-body
+      button#sendMoney.btn.btn-default Send Money
+      button#requestMoney.btn.btn-default Request Money
+      button#transactionList.btn.btn-default Transactionlist
+      button#AddressList.btn.btn-default Address list
+    script(src='https://code.jquery.com/jquery-3.2.1.slim.min.js', integrity='sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN', crossorigin='anonymous')
+    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js', integrity='sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl', crossorigin='anonymous')
