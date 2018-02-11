@@ -27,10 +27,10 @@ html(lang='en')
       text-align: center;
       }
   body
-    .header(style='text-align: center;')
+    .header(style='text-align: center')
       h1 Wallet
       p Open source bitcoin and alt-coin wallet
-    .col-md-12(style='background-color:#f4f7fc ; height:60px;')
+    .col-md-12(style='background-color:#f4f7fc ; height:60px')
       .col-md-12.tabs
         span Multicoins
         span Trade
@@ -39,9 +39,11 @@ html(lang='en')
         span Contact Us
         span Help Us
     .col-md-12.panel-body
-      button#sendMoney.btn.btn-default Send Money
-      button#requestMoney.btn.btn-default Request Money
-      button#transactionList.btn.btn-default Transactionlist
-      button#AddressList.btn.btn-default Address list
+        a(href="addressList")
+          button(type="button") Users
+        a(href="addressList")
+          button(type="button") AddressList
+        a(href="transactionList")
+          button(type="button") TransactionList         
     script(src='https://code.jquery.com/jquery-3.2.1.slim.min.js', integrity='sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN', crossorigin='anonymous')
     script(src='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js', integrity='sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl', crossorigin='anonymous')
